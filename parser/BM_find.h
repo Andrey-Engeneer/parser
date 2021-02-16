@@ -4,7 +4,7 @@
 # include <limits.h>
 # include <stdio.h>
 
-# define NO_OF_CHARS 256// ограничение длины строки
+# define NO_OF_CHARS 256// fix lenght string
 
 int max(int a, int b);
 void badCharHeuristic(char *str, int size, int badchar[NO_OF_CHARS]);

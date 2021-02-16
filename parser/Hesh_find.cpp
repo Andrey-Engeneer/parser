@@ -5,7 +5,7 @@
 
 bool find_word(const string &str, unordered_set<char> filter)
 {
-	for (auto c : str) // проверка на совпадение для каждого символа в строке str
+	for (auto c : str) // check identity char in filter  and string
 	{
 		if (filter.find(c) != filter.end())
 			return true;

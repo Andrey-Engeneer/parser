@@ -6,7 +6,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <cstdlib> // для использования функции exit()
+#include <cstdlib>
 
 int main()
 {
