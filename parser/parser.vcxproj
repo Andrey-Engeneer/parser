@@ -143,6 +143,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="Пример лога для парсинга.log" />
+    <Text Include="Пример результата парсинга.log" />
+    <Text Include="Пример фильра для парсинга.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BM_find.h" />

@@ -16,6 +16,15 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="Пример лога для парсинга.log">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="Пример результата парсинга.log">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="Пример фильра для парсинга.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
