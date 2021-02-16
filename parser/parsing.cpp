@@ -45,6 +45,15 @@ int parser(string in_file, string out_file, string conf_file,bool recording_matc
 		
 		stringSet.insert(filtr);// input key string in unordered_set
 	}
+
+	while (getline(ifile, str)) // iterate through all the rows in file
+	{
+		if (charSet.size() == 0)
+			break;
+		if (find_word(str, charSet))//Hesh-find
+			outSet.insert(str);
+	}
+
 	unordered_set<string> ::iterator itr;
 
 	for (itr = stringSet.begin(); itr != stringSet.end(); itr++) //iterate through all the rows in unordered_set
@@ -60,11 +69,7 @@ int parser(string in_file, string out_file, string conf_file,bool recording_matc
 		ifile.seekg(0);// go to first string file
 	}
 
-	while (getline(ifile, str)) // iterate through all the rows in file
-	{
-		if (find_word(str, charSet))//Hesh-find
-			outSet.insert(str); 
-	}
+	
 
 	ifile.clear();
 	ifile.seekg(0);// go to first string file
